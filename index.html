@@ -16,7 +16,7 @@
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Tratamiento</a></li>
-                    <li><a href="#">Opiniones</a></li>
+                    <li><a href="#">Opinion1</a></li>
                 </ul>
             </div>
         </div>
@@ -39,13 +39,19 @@
         }
 
         // Efecto parallax
-        window.addEventListener("scroll", function() {
-            let scrollPosition = window.pageYOffset; // Obtiene la posición del scroll
-            let parallax = document.querySelector('.parallax'); // Selecciona el fondo parallax
+        function updateParallax() {
+    const parallax = document.querySelector('.parallax');
+    const scrollPosition = window.pageYOffset; // Obtiene la posición del scroll
 
-            // Mueve el fondo a una velocidad diferente
-            parallax.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
-        });
+    // Mueve el fondo a una velocidad diferente
+    parallax.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
+}
+
+// Aplicar la animación de parallax cuando la página carga
+window.addEventListener("load", updateParallax);
+
+// Aplicar la animación de parallax mientras el usuario hace scroll
+window.addEventListener("scroll", updateParallax);
     </script>
 
 <!-- Sección 1: Introducción a la eliminación de tatuajes -->
