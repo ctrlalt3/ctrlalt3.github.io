@@ -24,8 +24,7 @@
         background-image: url('landing.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center top 50px;
-        background-attachment: fixed; /* Esta propiedad evita que el fondo se mueva al hacer scroll */
+        background-position: center;
         z-index: -1; /* Coloca el fondo detrás del contenido */
         will-change: transform;
     }
