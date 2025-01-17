@@ -1,4 +1,4 @@
-::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         display: none; /* Esto oculta la barra de desplazamiento */
     }
     /* Estilos para la sección principal con fondo parallax */
@@ -14,7 +14,7 @@
         
     }
 
-     .parallax {
+    .parallax {
         position: relative; /* Cambiado a relative */
         top: 0;
         left: 0;
@@ -22,9 +22,9 @@
         height: 100%;
         background-color: black;
         background-image: url('landing.jpeg');
-        background-size: 150vh 100vh;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center top 50px;
         background-attachment: fixed; /* Esta propiedad evita que el fondo se mueva al hacer scroll */
         z-index: -1; /* Coloca el fondo detrás del contenido */
         will-change: transform;
@@ -50,7 +50,7 @@
         margin:0 auto;
         overflow: hidden;
         z-index: 1000;
-        background-color: rgba(0, 0, 0, 0.938);
+        background-color: rgb(0, 0, 0);
         display: flex;
         align-items: center;
         padding: 10px 20px;
@@ -112,9 +112,9 @@
     .dropdown-container {
         display: none; /* Ocultamos el menú inicialmente */
         position: fixed;
-        bottom: 15%; /* Colocamos el menú encima del botón */
+        bottom: 17%; /* Colocamos el menú encima del botón */
         z-index: 2;
-        right: 6%;
+        right: 5%;
         background-color: transparent;
         /* Desplazamiento hacia abajo */
     }
@@ -354,5 +354,14 @@
             width: 100%;
             padding: 14px 0;
             text-align: center;
+        }
+        .parallax {
+            
+            background-image: url('background.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Esta propiedad evita que el fondo se mueva al hacer scroll */
+            z-index: -1; /* Coloca el fondo detrás del contenido */
+            will-change: transform;
         }
     }
