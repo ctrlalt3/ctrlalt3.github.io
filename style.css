@@ -24,6 +24,7 @@
         background-image: url('landing.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         background-position: center;
         z-index: -1; /* Coloca el fondo detrás del contenido */
         will-change: transform;
