@@ -358,8 +358,10 @@
         .parallax {
             background-image: url('background.png');
             background-size: cover;
+                background-attachment: fixed;
             background-position: center;
             background-attachment: fixed; /* Esta propiedad evita que el fondo se mueva al hacer scroll */
             z-index: -1; /* Coloca el fondo detrás del contenido */
+                    will-change: background-position; /* Optimiza el rendimiento para el parallax */
         }
     }
