@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo-img.jpeg" alt="logo">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="main-section">
+        <!-- Fondo Parallax -->
+        <div class="parallax"></div>
+        <!-- Contenido de la sección principal -->
+        <h1>Bienvenido a nuestro sitio</h1>
+        <p>Explora nuestras soluciones innovadoras.</p>
+
+       
+    </section>
+
+    <script>
+        // Función para alternar el estado del menú desplegable
+        function toggleDropdown() {
+            const dropdown = document.getElementById("myDropdown");
+            dropdown.classList.toggle("show");
+        }
+
+        // Efecto parallax
+        window.addEventListener("scroll", function() {
+            let scrollPosition = window.pageYOffset; // Obtiene la posición del scroll
+            let parallax = document.querySelector('.parallax'); // Selecciona el fondo parallax
+
+            // Mueve el fondo a una velocidad diferente
+            parallax.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
+        });
+    </script>
+
+    <!-- Sección 1: Introducción a la eliminación de tatuajes -->
+    <section>
+         <!-- Botón redondo que despliega el menú -->
+         <button class="dropdown-btn" onclick="toggleDropdown()">+</button>
+
+         <!-- Menú desplegable con círculos -->
+         <div class="dropdown-container" id="myDropdown">
+             <div class="circle">
+                 <a href="">
+                     <img src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" alt="">
+                 </a>
+             </div>
+             <div class="circle">
+                 <a href="">
+                     <img src="https://cdn.iconscout.com/icon/free/png-256/free-logo-whatsapp-9289809-7573062.png?f=webp" alt="">
+                 </a>
+             </div>
+             <div class="circle">
+                 <a href="https://g.co/kgs/jwnrXj9">
+                     <img src="https://cdn.iconscout.com/icon/free/png-256/free-google-maps-2981836-2476488.png?f=webp" alt="">
+                 </a>
+             </div>
+         </div>
+        <h2>¿Por qué eliminar un tatuaje?</h2>
+        <p>La eliminación de tatuajes es una opción para aquellos que han decidido que su tatuaje ya no refleja su estilo o deseos. Ya sea por arrepentimiento, cambio de gustos o por razones profesionales, te ofrecemos una solución eficaz y segura para eliminar tu tatuaje de forma permanente.</p>
+        <p>Usamos tecnología avanzada como el láser para garantizar resultados rápidos y efectivos con mínima incomodidad y sin dañar la piel.</p>
+    </section>
+
+    <!-- Sección 2: Cómo funciona nuestro tratamiento -->
+    <section>
+        <div>
+            <h2>¿Cómo funciona nuestro tratamiento de eliminación?</h2>
+            <p>Nuestro tratamiento se basa en el uso de láser Q-Switched, que emite pulsos de alta energía para descomponer la tinta del tatuaje. El cuerpo luego absorbe y elimina estos fragmentos de tinta, lo que gradualmente hace que el tatuaje desaparezca.</p>
+            <strong>Rápido y eficaz:</strong> Notarás resultados en pocas sesiones. <br>
+            <strong>Seguro y sin cicatrices:</strong> Usamos tecnología avanzada que minimiza el riesgo de cicatrices. <br>
+            <strong>Personalizado:</strong> Cada tratamiento se adapta a tu tipo de piel y el color del tatuaje. <br>
+        </div>
+    </section>
+
+    <!-- Sección 3: Testimonios de clientes -->
+    <section>
+        <div>
+            <h2>Testimonios de nuestros clientes</h2>
+            <p><strong>Laura M.</strong>: "Pensé que nunca podría deshacerme de mi tatuaje, pero después de unas pocas sesiones con el láser, ¡el resultado ha sido increíble!"</p>
+            <p><strong>Javier P.</strong>: "El proceso fue rápido y sin dolor. El equipo fue muy profesional. ¡Recomiendo este servicio!"</p>
+        </div>
+    </section>
+
+    <!-- Sección 4: Preguntas frecuentes -->
+    <section>
+        <div>
+            <h2>Preguntas Frecuentes</h2>
+            <h3>¿Es doloroso el tratamiento de eliminación de tatuajes?</h3>
+            <p>El tratamiento puede causar molestias, pero es tolerable. Utilizamos anestesia tópica para minimizar cualquier incomodidad durante la sesión.</p>
+
+            <h3>¿Cuántas sesiones necesito?</h3>
+            <p>La cantidad de sesiones depende de varios factores como el tamaño del tatuaje, el color de la tinta y la ubicación. En promedio, se requieren entre 5 y 10 sesiones para eliminar el tatuaje por completo.</p>
+        </div>
+    </section>
+
+    <!-- Sección 5: Llamada a la acción -->
+    <section>
+        <h2>¿Estás listo para eliminar tu tatuaje?</h2>
+        <p>Si has tomado la decisión de deshacerte de tu tatuaje, nosotros estamos aquí para ayudarte. Contáctanos hoy mismo para agendar tu consulta inicial y empezar tu tratamiento.</p>
+        <a href="contacto.html" class="cta-button">Contáctanos ahora</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <p>Somos una empresa dedicada a ofrecer soluciones innovadoras. Nuestro objetivo es brindarte lo mejor en productos y servicios.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 TuEmpresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
