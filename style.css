@@ -25,7 +25,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top 50px;
-    background-attachment: fixed; /* Esta propiedad asegura que el fondo no se mueva al hacer scroll */
     z-index: -1; /* Coloca el fondo detrás del contenido */
     will-change: background-position; /* Optimiza el rendimiento para el parallax */
 }
