@@ -1,4 +1,4 @@
-        ::-webkit-scrollbar {
+          ::-webkit-scrollbar {
         display: none; /* Esto oculta la barra de desplazamiento */
     }
     /* Estilos para la sección principal con fondo parallax */
@@ -335,7 +335,66 @@
         margin: 0;
     }
     
+    details {
+        width: 98%;
+        border: px solid #000000; 
+        border-radius: 8px;
+        margin-bottom: 13px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        background-color: #eeeeee;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        font-size: 1rem;
+        color: #333333;
+      }
+      
+      summary {
+        font-weight: bold;
+        list-style: none; /* Elimina el triángulo por defecto */
+        display: flex;
+        padding: 2vh;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      summary::after {
+        content: "..."; 
+        font-size: 12px;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      details[open] summary::after {
+        transform: rotate(180deg);
+      }
+      
+      ul {
+        margin-top: 10px;
+        padding-left: 2%;
+        list-style: none;
+      }
+      
+      ul li {
+        padding: 5px 0;
+        color: #333;
+      }
+      
+      details[open] {
 
+        border-color: #999999;
+      }
+
+      .photo-proceso{
+        width: 97%; 
+        border-radius: 1dvh;
+      }
+
+      .clasificacion input{
+        display: none; 
+      }
+      .preguntas p{
+        padding: 2vh;
+      }
     /* Responsive Design */
     @media (max-width: 768px) {
         header h1 {
