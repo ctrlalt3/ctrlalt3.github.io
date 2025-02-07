@@ -113,11 +113,6 @@ will-change: background-position; /* Optimiza el rendimiento para el parallax */
     transition: background-color 0.3s;
 }
 
-
-.dropdown-btn:hover {
-    background-color: #0f0f0f;
-}
-
 /* Contenedor del menú desplegable */
 .dropdown-container {
     display: none; /* Ocultamos el menú inicialmente */
