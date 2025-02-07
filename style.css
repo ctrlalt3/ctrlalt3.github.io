@@ -1,6 +1,9 @@
           ::-webkit-scrollbar {
         display: none; /* Esto oculta la barra de desplazamiento */
     }
+          *{
+                    overflow-x:hidden;
+          }
     /* Estilos para la sección principal con fondo parallax */
     #main-section {
         width: 100%;
