@@ -386,6 +386,7 @@
 
       .photo-proceso{
         width: 97%; 
+        padding: 2dvh;        
         border-radius: 1dvh;
       }
 
