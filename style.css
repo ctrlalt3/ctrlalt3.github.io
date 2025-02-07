@@ -1,172 +1,438 @@
-          ::-webkit-scrollbar {
-        display: none; /* Esto oculta la barra de desplazamiento */
-    }
-          *{
-                    overflow-x:hidden;
-          }
-    /* Estilos para la sección principal con fondo parallax */
-    #main-section {
-        width: 100%;
-        height: 100dvh;
-        position: relative;
-        margin: 0;
-        padding: 0;
-        max-width: 100%;
-        overflow: hidden;
-        text-align: center; /* Centrar el contenido */
-        
-    }
-
-    .parallax {
-    position: relative; /* Asegura que el contenedor esté en su lugar */
-    top: 0;
-    left: 0;
+::-webkit-scrollbar {
+    display: none; /* Esto oculta la barra de desplazamiento */
+}
+*{
+        overflow-x:hidden;
+}
+/* Estilos para la sección principal con fondo parallax */
+#main-section {
     width: 100%;
-    height: 100dvh; /* Usa vh para que siempre ocupe la pantalla completa */
-    background-color: black;
-    background-image: url('landing.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top 50px;
-    z-index: -1; /* Coloca el fondo detrás del contenido */
-    will-change: background-position; /* Optimiza el rendimiento para el parallax */
+    height: 100dvh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center; /* Centrar el contenido */
+    
+}
+
+.parallax {
+position: relative; /* Asegura que el contenedor esté en su lugar */
+top: 0;
+left: 0;
+width: 100%;
+height: 100dvh; /* Usa vh para que siempre ocupe la pantalla completa */
+background-color: black;
+background-image: url('landing.jpeg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center top 50px;
+z-index: -1; /* Coloca el fondo detrás del contenido */
+will-change: background-position; /* Optimiza el rendimiento para el parallax */
 }
 
 
-    /* Estilo del contenido de la sección */
-    #main-section > * {
-        position: relative;
-        z-index: 1; /* Hace que el contenido esté por encima del fondo */
+/* Estilo del contenido de la sección */
+#main-section > * {
+    position: relative;
+    z-index: 1; /* Hace que el contenido esté por encima del fondo */
+}
+.nav-logo{
+    padding: 1vh; 
+    padding-left: 1.5vh; 
+}
+
+.nav-logo img{
+    width: 50px;
+    height: auto;
+}
+
+/* Contenedor del nav fijo */
+.nav-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.904); 
+    display: flex;  
+    align-items: center;  
+    padding: 5px 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    white-space: nowrap; /* Evita que los elementos se rompan en varias líneas */
+    overflow: hidden;
+}
+
+/* Contenedor que permite desplazamiento horizontal */
+.nav-links {
+    width: 90%;  
+    display: flex;
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+}
+
+/* Oculta la barra de desplazamiento en Chrome y otros navegadores */
+.nav-links::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilo de los enlaces */
+.nav-links a {  
+    border-radius: 10px; 
+    padding: 1vh 2vh;  
+    color: rgb(236, 236, 236);  
+    text-decoration: none;
+    min-width: 100px; /* Asegura que los enlaces ocupen suficiente espacio */
+    text-align: center;
+}
+
+.container-button{
+    position: fixed;
+    top: 50%; 
+}
+/* Estilo del botón redondo */
+.dropdown-btn {
+    position: fixed; 
+    background-color: rgb(233, 3, 3);
+    padding: 1vh;
+    bottom: 5%;  
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    border: none;
+    z-index: 2;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+
+.dropdown-btn:hover {
+    background-color: #0f0f0f;
+}
+
+/* Contenedor del menú desplegable */
+.dropdown-container {
+    display: none; /* Ocultamos el menú inicialmente */
+    position: fixed;
+    bottom: 17%; /* Colocamos el menú encima del botón */
+    z-index: 2;
+    right: 5%;
+    background-color: transparent;
+    /* Desplazamiento hacia abajo */
+}
+
+.dropdown-container.show {
+    display: flex;
+    flex-direction: column; /* Elementos en una columna */
+    align-items: center;
+    opacity: 1; /* El menú se vuelve visible */
+    transform: translateY(0); /* Desliza hacia arriba */
+}
+
+/* Estilo de cada círculo */
+.dropdown-container .circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(7, 7, 7, 0.822);
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown-container .circle:hover {
+    background-color: #555;
+}
+
+.circle img{
+    width: 40px;
+    height: auto;
+}
+
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+/* Header */
+header {
+    background-color: #6200ea; /* Color principal de Google */
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Sección de contenido */
+section {
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo para las tarjetas */
+section > div {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo para los botones (Material Design) */
+.cta-button {
+    display: inline-block; 
+    color: white;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+}
+
+.cta-button:active {
+    background-color: #03dac5;
+    transform: translateY(2px);
+}
+
+/* Sección de Testimonios */
+section > div p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Sección de Preguntas frecuentes */
+section h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color: #333;
+}
+
+
+#reseñas {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+.reseña {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+section p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #d41616;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
+/* Estilo básico para el footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-section ul li a:hover {
+    color: #00BFFF;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+details {
+    width: 98%;
+    border: px solid #000000; 
+    border-radius: 8px;
+    margin-bottom: 13px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    background-color: #eeeeee;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 1rem;
+    color: #333333;
+  }
+  
+  summary {
+    font-weight: bold;
+    list-style: none; /* Elimina el triángulo por defecto */
+    display: flex;
+    padding: 2vh;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  summary::after {
+    content: "..."; 
+    font-size: 12px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  details[open] summary::after {
+    transform: rotate(180deg);
+  }
+  
+  ul {
+    margin-top: 10px;
+    padding-left: 2%;
+    list-style: none;
+  }
+  
+  ul li {
+    padding: 5px 0;
+    color: #333;
+  }
+  
+  details[open] {
+
+    border-color: #999999;
+  }
+
+  .photo-proceso{
+    width: 97%; 
+    padding: 2dvh;        
+    border-radius: 1dvh;
+  }
+
+  .clasificacion input{
+    display: none; 
+  }
+  .preguntas p{
+    padding: 2vh;
+  }
+  label{
+    color: rgb(255, 174, 0);
+  }
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
     }
 
-    .nav-logo img{
-        width: 50px;
-        height: auto;
+    section {
+        padding: 20px;
     }
-
-    /* Contenedor del nav fijo */
-    .nav-container {
-        position: fixed;
-        top: 0; /* Lo pegamos a la parte superior */
+    
+    .cta-button {
         width: 100%;
-        margin:0 auto;
-        overflow: hidden;
-        z-index: 1000;
-        background-color: rgba(0, 0, 0, 0.904);
-        display: flex;
-        align-items: center;
-        padding: 10px 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
-        border-left: none; /* Elimina el borde izquierdo */
+        padding: 14px 0;
+        text-align: center;
     }
-
-    /* Estilo de los enlaces en el nav */
-    .nav-links {
-        width: 90%;
-        justify-content: center;
-        display: flex;
+    .parallax {
+        background-image: url('background.png');
+        background-size: cover;
+            background-attachment: fixed;
+        background-position: center;
+        background-attachment: fixed; /* Esta propiedad evita que el fondo se mueva al hacer scroll */
+        z-index: -1; /* Coloca el fondo detrás del contenido */
+                will-change: background-position; /* Optimiza el rendimiento para el parallax */
     }
-
-    .nav-links ul {
-        display: flex;
-        gap: 20px;
-        list-style: none;
-        padding-left: 0; /* Asegura que no haya padding extra a la izquierda */
-    }   
-
-    /* Estilo de los enlaces dentro de los elementos del menú */
-    .nav-links a {
-        color: white;
-        display: block;
-        text-decoration: none;
-    }
-    .container-button{
-        position: fixed;
-        top: 50%; 
-    }
-    /* Estilo del botón redondo */
-    .dropdown-btn {
-        position: fixed; 
-        bottom: 5%;
-        right: 5%;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background-color: #d41616;
-        color: white;
-        border: none;
-        z-index: 2;
-        font-size: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        transition: background-color 0.3s;
-    }
-
-
-    .dropdown-btn:hover {
-        background-color: #ff1403;
-    }
-
-    /* Contenedor del menú desplegable */
-    .dropdown-container {
-        display: none; /* Ocultamos el menú inicialmente */
-        position: fixed;
-        bottom: 17%; /* Colocamos el menú encima del botón */
-        z-index: 2;
-        right: 5%;
-        background-color: transparent;
-        /* Desplazamiento hacia abajo */
-    }
-
-    .dropdown-container.show {
-        display: flex;
-        flex-direction: column; /* Elementos en una columna */
-        align-items: center;
-        opacity: 1; /* El menú se vuelve visible */
-        transform: translateY(0); /* Desliza hacia arriba */
-    }
-
-    /* Estilo de cada círculo */
-    .dropdown-container .circle {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background-color: #a7a7a780;
-        margin: 10px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 15px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-    .dropdown-container .circle:hover {
-        background-color: #555;
-    }
-
-    .circle img{
-        width: 40px;
-        height: auto;
-    }
-
-    /* Estilo global */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: 'Roboto', sans-serif;
-        background-color: #f5f5f5;
-        color: #333;
-        line-height: 1.6;
-    }
+}
 
     a {
         text-decoration: none;
