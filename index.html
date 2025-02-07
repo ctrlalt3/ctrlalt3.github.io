@@ -1,154 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EleminacionTattooHLV</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EliminacionTattooHLV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav>
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="logo.png" alt="logo">
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Tratamiento</a></li>
-                    <li><a href="#">Opinion</a></li>
-                </ul>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="logo.png" alt="logo" />
         </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Tratamiento</a></li>
+            <li><a href="#">Opinion</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <section id="main-section">
-        <!-- Fondo Parallax -->
-        <div class="parallax"></div>
-        <!-- Contenido de la sección principal -->
-      
-
-       
+      <!-- Fondo Parallax -->
+      <div class="parallax"></div>
+      <!-- Contenido de la sección principal -->
     </section>
 
     <script>
-        // Función para alternar el estado del menú desplegable
-        function toggleDropdown() {
-            const dropdown = document.getElementById("myDropdown");
-            dropdown.classList.toggle("show");
-        }
+      // Función para alternar el estado del menú desplegable
+      function toggleDropdown() {
+        const dropdown = document.getElementById("myDropdown");
+        dropdown.classList.toggle("show");
+      }
 
-        // Efecto parallax
-        function updateParallax() {
-    const parallax = document.querySelector('.parallax');
-    const scrollPosition = window.pageYOffset; // Obtiene la posición del scroll
+      // Efecto parallax
+      function updateParallax() {
+        const parallax = document.querySelector(".parallax");
+        const scrollPosition = window.pageYOffset; // Obtiene la posición del scroll
 
-    // Mueve el fondo a una velocidad diferente
-    parallax.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
-}
+        // Mueve el fondo a una velocidad diferente
+        parallax.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
+      }
 
-// Aplicar la animación de parallax cuando la página carga
-window.addEventListener("load", updateParallax);
+      // Aplicar la animación de parallax cuando la página carga
+      window.addEventListener("load", updateParallax);
 
-// Aplicar la animación de parallax mientras el usuario hace scroll
-window.addEventListener("scroll", updateParallax);
+      // Aplicar la animación de parallax mientras el usuario hace scroll
+      window.addEventListener("scroll", updateParallax);
     </script>
 
-<!-- Sección 1: Introducción a la eliminación de tatuajes -->
-<button class="dropdown-btn" onclick="toggleDropdown()">+</button>
+    <!-- Sección 1: Introducción a la eliminación de tatuajes -->
+    <button class="dropdown-btn" onclick="toggleDropdown()">+</button>
 
-<!-- Menú desplegable con círculos -->
-<div class="dropdown-container" id="myDropdown">
-    <div class="circle">
-        <a href="https://wa.me/34675446574?text=Te escribía interesado para borrar un tatuaje">
-            <img src="https://cdn.iconscout.com/icon/free/png-256/free-logo-whatsapp-9289809-7573062.png?f=webp" alt="">
+    <!-- Menú desplegable con círculos -->
+    <div class="dropdown-container" id="myDropdown">
+      <div class="circle">
+        <a
+          href="https://wa.me/34675446574?text=Te escribía interesado para borrar un tatuaje"
+        >
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-256/free-logo-whatsapp-9289809-7573062.png?f=webp"
+            alt=""
+          />
         </a>
-    </div>
-    <div class="circle">
+      </div>
+      <div class="circle">
         <a href="tel:675446574">
-            <img src="https://cdn.icon-icons.com/icons2/272/PNG/512/Phone_30029.png" alt="">
-        </a> 
-    </div>
-    <div class="circle">
-        <a href="https://maps.app.goo.gl/nQxdCKq5dAgAdxqm9">
-            <img src="https://cdn.iconscout.com/icon/free/png-256/free-google-maps-2981836-2476488.png?f=webp" alt="">
+          <img
+            src="https://cdn.icon-icons.com/icons2/272/PNG/512/Phone_30029.png"
+            alt=""
+          />
         </a>
+      </div>
+      <div class="circle">
+        <a href="https://maps.app.goo.gl/nQxdCKq5dAgAdxqm9">
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-256/free-google-maps-2981836-2476488.png?f=webp"
+            alt=""
+          />
+        </a>
+      </div>
     </div>
-</div>
     <section>
-         <!-- Botón redondo que despliega el menú -->
-        <h2>¿Por qué eliminar un tatuaje?</h2>
-        <p>La eliminación de tatuajes es una opción para aquellos que han decidido que su tatuaje ya no refleja su estilo o deseos. Ya sea por arrepentimiento, cambio de gustos o por razones profesionales, te ofrecemos una solución eficaz y segura para eliminar tu tatuaje de forma permanente.</p>
-        <p>Usamos tecnología avanzada como el láser para garantizar resultados rápidos y efectivos con mínima incomodidad y sin dañar la piel.</p>
+      <!-- Botón redondo que despliega el menú -->
+      <div>
+        <h2>Especialistas en Eliminación de tatuajes</h2>
+        <p>
+            De la misma forma que tomamos la decisión de tatuarnos, en un momento
+            dado y por diferentes motivos, nos podemos ver en la necesidad de
+            recurrir a la eliminación de tatuajes con láser en Huelva. De manera que
+            es importante que resolvamos todas las dudas frecuentes, preguntas que
+            se plantean a la hora de recurrir a este tipo de servicio.
+        </p>
+        <p>CONSULTAS TOTALMENTE GRATIS (botón WhatsApp)</p>
+        </div>
     </section>
 
     <!-- Sección 2: Cómo funciona nuestro tratamiento -->
     <section>
-        <div>
-            <h2>¿Cómo funciona nuestro tratamiento de eliminación?</h2>
-            <p>Nuestro tratamiento se basa en el uso de láser Q-Switched, que emite pulsos de alta energía para descomponer la tinta del tatuaje. El cuerpo luego absorbe y elimina estos fragmentos de tinta, lo que gradualmente hace que el tatuaje desaparezca.</p>
-            <strong>Rápido y eficaz:</strong> Notarás resultados en pocas sesiones. <br>
-            <strong>Seguro y sin cicatrices:</strong> Usamos tecnología avanzada que minimiza el riesgo de cicatrices. <br>
-            <strong>Personalizado:</strong> Cada tratamiento se adapta a tu tipo de piel y el color del tatuaje. <br>
-        </div>
+        <h2>¿QUIERES CONOCER NUESTRAS TARIFAS?</h2>
+        <p>
+          Elimina Tatuajes con la Última Tecnología Láser Todos tenemos malos
+          recuerdos o tatuajes mal hechos, en eliminación de tatuajes Huelva
+          eliminamos los tatuajes y micropigmentación, con las mejores máquinas
+          del mercado. Los tratamientos se realizan con el láser Q-Switch, la
+          última tecnología láser para poder borrar tatuajes, micropigmentación,
+          un maquillaje permanente, ya sean en la cara, escote o manos.
+        </p>
+    </section>
+
+    <section>
+      <div>
+        <h2>Precios:</h2>
+        <strong>Tattoo mini (3x3cm)</strong>
+        <p>40€</p>
+        <strong>Tattoo pequeño (6x6cm) </strong>
+        <p>60€</p>
+        <strong>Tattoo mediano (10x10cm)</strong>
+        <p>80€</p>
+        <strong>Tattoo mediano (10x10cm)</strong>
+        <p>100€</p>
+        <strong> Tattoo grande (15x15cm)</strong>
+        <p>130€</p>
+        <p>Tenemos ofertas y bonos por cantidades.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="preguntas">
+        <h2>Preguntas frecuentes</h2>
+        <details>
+          <summary>¿Es posible eliminar tatuaje?</summary>
+          <p>
+            La pregunta obligada en primer lugar siempre es la relacionada con
+            las posibilidades de eliminar un tatuaje. Hay que tener en cuenta
+            que en la actualidad tenemos a nuestra disposición sistemas
+            avanzados que nos ofrecen no sólo una gran eficacia a la hora de
+            eliminar un tatuaje, sino también la máxima seguridad, pudiendo de
+            este modo actuar sobre prácticamente cualquier parte de nuestro
+            cuerpo con muy buenos resultados.
+            <br><br>
+          
+            Para responder a esta respuesta, deberemos analizar varios aspectos:
+          </p>
+
+          <p>
+            <b>De que color es el tatuaje:</b>
+
+            Si hay más de un color el tatuaje será más costoso de eliminarlo.
+          </p>
+
+          <p>
+            <b> Cantidad de pigmento en el tatuaje que se va a eliminar: </b>
+
+            Dependiendo de la cantidad de tinta que se encuentre dentro de la
+            piel, costará mas tiempo o menos de poder borrar el tatuaje de la
+            piel.
+          </p>
+
+          <p>
+            <b> Cicatrices en la zona de eliminación o borrado: </b>
+
+            El hecho de que en la zona donde se quiere eliminar se encontremos
+            con cicatrices implica una barrera que protege la tinta y las
+            particulas de la misma, por lo que tiene un mayor costo a la hora de
+            borrarlo.
+          </p>
+        </details>
+        <details>
+          <summary>Peligros de eliminar tatuaje</summary>
+          <p>
+            También es común preguntarnos si hay algún tipo de riesgo al
+            eliminar un tatuaje con láser. En este sentido, debemos tener en
+            cuenta que se trata de un procedimiento agresivo, aunque los efectos
+            secundarios no son habituales. En caso de que aparezcan, suelen ser
+            temporales. En cualquier caso, lo fundamental es acudir a
+            especialistas cualificados y certificados, quienes llevarán a cabo
+            una serie de sesiones. Después de cada una, será necesario seguir un
+            cuidado adecuado de la zona tratada, lo que reducirá al mínimo la
+            posibilidad de efectos adversos. Entre los síntomas más comunes, se
+            pueden mencionar:
+          </p>
+            <p><b>Leve hinchazón.</b></p>
+            <p><b>Aparición de pequeños hematomas.</b></p>
+            <p><b>Molestias temporales en la zona.</b></p>
+          
+        </details>
+        <details>
+          <summary>¿Eliminarlo es doloroso?</summary>
+          <p>
+            No se trata de un proceso especialmente doloroso, aunque hay que
+            tener en cuenta que podremos notar molestias leves en la zona que se
+            esté tratando.
+          </p>
+        </details>
+        <details>
+          <summary>¿Duele más que hacerselo?</summary>
+          <p>
+            Normalmente la eliminación de tatuajes no duele tanto como hacerse
+            un tatuaje. Con el paso de las sesiones para borrar tatuajes el
+            dolor se reduce porque la piel se termina acostumbrando al láser.
+          </p>
+        </details>
+        <details>
+          <summary>¿Cuánto se tarda en eliminar?</summary>
+          <p>
+            El tiempo que se tarda para eliminar un tatuaje por completo es muy
+            variable, ya que por una parte va a depender del tipo de tatuaje que
+            vayamos a eliminar, mientras que por otra parte nuestro tipo de piel
+            y proceso también serán determinantes en esto. Las pieles más rudas
+            van a requerir más tiempo, mientras que las suaves supondrán un
+            proceso más rápido, lo que significa que en el caso de la primera
+            tendremos que someternos a más sesiones. De esto podemos obtener que
+            también variará el número de sesiones en función de la zona sobre la
+            que vayamos a actuar, ya que la piel de la cara por ejemplo es más
+            fina que la piel de las manos.
+          </p>
+          <p>
+            Los factores más representativos para el número de sesiones y tiempo
+            necesario serán:
+          </p>
+            <p><b>Características de la piel.</b></p></strong>
+            <p><b>Particularidades del propio tatuaje.</b></p></strong>
+            
+              <p><b>Lugar en el que se encuentra ubicado el tatuaje.</b></p></strong>
+            
+            
+              <p><b>Metabolismo del paciente que quiere eliminar el
+                tatuaje.</b></p>
+                
+        
+              <p><b>Pigmentos utilizados en la realización del tatuaje.</b></p>
+                
+             
+            <p><b></b></p>Profundidad del tatuaje.</strong>
+          <p>
+            De cualquier manera, por norma general se suele conseguir acabar con
+            el tatuaje entre tres y hasta ocho sesiones, requiriendo alguna
+            adicional en muy raras ocasiones.
+          </p>
+        </details>
+        <details>
+          <summary>Duración de las sesiones</summary>
+          <p>
+            En cuanto a la duración de cada sesión va a depender del sistema
+            utilizado, tamaño del tatuaje y características de la piel así como
+            las del propio tatuaje. Generalmente hablamos de sesiones de entre
+            15 minutos y hasta 30 minutos para tatuajes de mayores dimensiones.
+          </p>
+        </details>
+        <details>
+          <summary>Tiempo entre sesiones</summary>
+          <p>
+            Esto también va a variar en función de cada paciente, pero lo
+            habitual es realizar sesiones en plazos no inferiores a dos meses.
+            La razón por la que se separan tanto las sesiones es doble:
+          </p>
+          <p>
+            Es muy importante asegurarnos de la perfecta cicatrización y curado
+            de la zona antes de someternos a una nueva sesión, evitando así que
+            aparezcan efectos secundarios y molestias.
+          </p>
+          <p>
+            Necesitamos tiempo para permitir que el propio organismo se encargue
+            de eliminar los restos de tinta.
+          </p>
+        </details>
+        <details>
+          <summary>Tiempo eque tarda en desaparecer</summary>
+          <p>
+            Incluso aunque nos hayamos sometido a todas las sesiones, todavía
+            hará falta un cierto tiempo que deberá transcurrir para que los
+            tatuajes desaparezcan por completo y la zona esté perfectamente
+            recuperada, ya que se trata de un proceso progresivo para el cual
+            deberemos tener paciencia.
+          </p>
+        </details>
+        <details>
+          <summary>¿Negro o color...?</summary>
+          <p>
+            Los colores son más complicados, y de hecho, dependiendo de cada
+            caso es posible que tengamos que recurrir a distintos sistemas. El
+            color más difícil de eliminar en los tatuajes es el verde.
+          </p>
+        </details>
+        <details>
+          <summary>Volver a tatuar la zona</summary>
+          <p>
+            También es bastante frecuente que nos planteemos la posibilidad de
+            eliminar un viejo tatuaje que ya no nos gusta, no tiene la
+            trascendencia que tenía en su día o cualquier otra razón, para
+            colocar sobre él uno nuevo. En este caso no vamos a tener ningún
+            tipo de problema en volver a tatuar la zona, aunque por supuesto es
+            muy importante que demos el tiempo suficiente para que la piel se
+            haya recuperado por completo del proceso de eliminación.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section>
+      
+        <h2>
+          Cuidados después de cada sesión de láser de eliminación de tatuaje
+        </h2>
+        <p>
+          Hay que tener en cuenta que el proceso de eliminación de tatuajes con
+          láser en Barcelona no finaliza tras la sesión, sino que una vez que
+          lleguemos a casa deberemos proceder a realizar las curas y un
+          mantenimiento que constará generalmente de lo siguiente:
+        </p>
+
+        <p>
+          <b>Si la zona enrojece,</b> hay molestias o aparece hinchazón,
+          deberemos aplicar frío.
+        </p>
+
+        <p><b>No rascaremos ni frotaremos</b> la zona tratada.</p>
+
+        <p>
+          <b>Hay que lavar la zona tratada de forma diaria,</b> para lo cual
+          utilizaremos agua y jabón neutro. No utilizaremos esponjas y a la hora
+          de secar simplemente presionaremos con la toalla evitando arrastrar.
+        </p>
+
+        <p>
+          <b>Hay que lavar la zona tratada de forma diaria,</b> aplicaremos
+          crema regeneradora.
+        </p>
+
+        <p>
+          También tendremos que aplicar un tratamiento en
+          <b>pomada durante los primeros días.</b>
+        </p>
+
+        <p>
+          Un consejo muy importante a tener en cuenta es que, durante los días
+          posteriores al proceso, debemos hacer todo lo posible por
+          <b
+            >evitar estar en zonas con temperaturas elevadas, no tomaremos el
+            sol y, al ducharnos o bañarnos, optaremos por un agua templada,</b
+          >
+          siendo mejor si utilizamos directamente agua fría.
+        </p>
+    </section>
+
+    <section>
+      
+        <h2>Pasos para la eliminación</h2>
+        <p>
+          Antes de proceder a eliminar un tatuaje se debe
+          <b> estudiar sus características</b>, eligiendo así el sistema más
+          eficaz y que ofrezca <b>mayores garantías</b>. En este sentido se
+          deberán tener en cuenta la <b>ubicación</b> del tatuaje, los
+          <b>colores</b> que se han utilizado, el <b>tipo</b> de tatuaje y
+          <b>experiencia</b> de tatuador, la <b>tonalidad</b> de la piel y por
+          supuesto también es un factor importante conocer su
+          <b> antigüedad.</b>
+        </p>
+        <img
+          class="photo-proceso"
+          src="https://institutomedicoricart.com/wp-content/uploads/2022/10/tatuajes_02.jpg"
+          alt=""
+          style
+        />
+        <p>
+          Es muy importante que cumplamos con las
+          <b>recomendaciones del profesional</b>, de manera que en las semanas
+          previas deberemos evitar:
+        </p>
+        <p>
+          - Consumo de antiflamatorios, protectores estomacales y antibióticos,
+          entre otros medicamentos.
+        </p>
+        <p>- Evitaremos tomar sol al menos dos semanas antes.</p>
+        <p>
+          Si nos surge cualquier tipo de duda, lo mejor que podemos hacer es
+          <b>consultar con el especialista</b> para resolverlas y de este modo,
+          mejorar las condiciones para reducir al mínimo las molestias del
+          proceso. Hay que tener en cuenta que el proceso al que nos vamos a
+          someter se basa en fragmentar las partículas de los pigmentos que
+          tenemos bajo la piel, de manera que el organismo podrá eliminarlas con
+          mucha <b>mayor facilidad</b> mediante absorción y posterior drenaje
+          linfático.
+        </p>
     </section>
 
     <!-- Sección 3: Testimonios de clientes -->
     <section>
-        <div>
-            <h2>Testimonios de nuestros clientes</h2>
-            <p><strong>Laura M.</strong>: "Pensé que nunca podría deshacerme de mi tatuaje, pero después de unas pocas sesiones con el láser, ¡el resultado ha sido increíble!"</p>
-            <p><strong>Javier P.</strong>: "El proceso fue rápido y sin dolor. El equipo fue muy profesional. ¡Recomiendo este servicio!"</p>
-        </div>
+      <div>
+        <h2>Testimonios de nuestros clientes</h2>
+        <p>
+          <strong>Laura M.</strong>: "Pensé que nunca podría deshacerme de mi
+          tatuaje, pero después de unas pocas sesiones con el láser, ¡el
+          resultado ha sido increíble!" ★★★★★
+        </p>
+
+        <p>
+          <strong>Javier P.</strong>: "El proceso fue rápido y sin dolor. El
+          equipo fue muy profesional. ¡Recomiendo este servicio!"
+        </p>
+        <p class="clasificacion">
+          <input
+            id="radio1"
+            type="radio"
+            name="estrellas"
+            style
+            value="5"
+          /><!--
+            --><label for="radio1"></label
+          ><!--
+            --><input id="radio2" type="radio" name="estrellas" value="4" /><!--
+            --><label for="radio2">★</label
+          ><!--
+            --><input id="radio3" type="radio" name="estrellas" value="3" /><!--
+            --><label for="radio3">★</label
+          ><!--
+            --><input id="radio4" type="radio" name="estrellas" value="2" /><!--
+            --><label for="radio4">★</label
+          ><!--
+            --><input id="radio5" type="radio" name="estrellas" value="1" /><!--
+            --><label for="radio5">★</label>
+        </p>
+      </div>
     </section>
 
     <!-- Sección 4: Preguntas frecuentes -->
-    <section>
-        <div>
-            <h2>Preguntas Frecuentes</h2>
-            <h3>¿Es doloroso el tratamiento de eliminación de tatuajes?</h3>
-            <p>El tratamiento puede causar molestias, pero es tolerable. Utilizamos anestesia tópica para minimizar cualquier incomodidad durante la sesión.</p>
-
-            <h3>¿Cuántas sesiones necesito?</h3>
-            <p>La cantidad de sesiones depende de varios factores como el tamaño del tatuaje, el color de la tinta y la ubicación. En promedio, se requieren entre 5 y 10 sesiones para eliminar el tatuaje por completo.</p>
-        </div>
-    </section>
 
     <!-- Sección 5: Llamada a la acción -->
     <section>
-        <h2>¿Estás listo para eliminar tu tatuaje?</h2>
-        <p>Si has tomado la decisión de deshacerte de tu tatuaje, nosotros estamos aquí para ayudarte. Contáctanos hoy mismo para agendar tu consulta inicial y empezar tu tratamiento.</p>
-        <a href="contacto.html" class="cta-button">Contáctanos ahora</a>
+      <h2>¿Estás listo para eliminar tu tatuaje?</h2>
+      <p>
+        Si has tomado la decisión de deshacerte de tu tatuaje, nosotros estamos
+        aquí para ayudarte. Contáctanos hoy mismo para agendar tu consulta
+        inicial y empezar tu tratamiento.
+      </p>
+      <a href="contacto.html" class="cta-button">Contáctanos ahora</a>
     </section>
 
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Sobre Nosotros</h3>
-                <p>Somos una empresa dedicada a ofrecer soluciones innovadoras. Nuestro objetivo es brindarte lo mejor en productos y servicios.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Enlaces Rápidos</h3>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Redes Sociales</h3>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
-            </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Sobre Nosotros</h3>
+          <p>
+            Somos una empresa dedicada a ofrecer soluciones innovadoras. Nuestro
+            objetivo es brindarte lo mejor en productos y servicios.
+          </p>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Elimanación Tattoos Huelva. Todos los derechos reservados.</p>
+        <div class="footer-section">
+          <h3>Enlaces Rápidos</h3>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
         </div>
+        <div class="footer-section">
+          <h3>Redes Sociales</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Elimanación Tattoos Huelva. Todos los derechos reservados.
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
