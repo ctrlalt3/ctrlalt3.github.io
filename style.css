@@ -22,7 +22,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Usa vh para que siempre ocupe la pantalla completa */
+    height: 100dvh; /* Usa vh para que siempre ocupe la pantalla completa */
     background-color: black;
     background-image: url('landing.jpeg');
     background-size: cover;
