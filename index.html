@@ -10,14 +10,15 @@
     <nav>
       <div class="nav-container">
         <div class="nav-logo">
-          <img src="logo.png" alt="logo" />
+            <img src=" logo.png" alt="">  
         </div>
         <div class="nav-links">
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Tratamiento</a></li>
-            <li><a href="#">Opinion</a></li>
-          </ul>
+          <a href="#">Inicio</a>
+            <a href="#tarifas">Precios</a>
+            <a href="#tratamiento">Tratamiento</a>
+            <a href="#opiniones">Opiniones</a>
+            <a href="#opiniones">Preguntas</a>
+        </ul>
         </div>
       </div>
     </nav>
@@ -28,31 +29,41 @@
       <!-- Contenido de la sección principal -->
     </section>
 
-    <script>
-      // Función para alternar el estado del menú desplegable
-      function toggleDropdown() {
-        const dropdown = document.getElementById("myDropdown");
-        dropdown.classList.toggle("show");
-      }
-
-      // Efecto parallax
-      function updateParallax() {
-        const parallax = document.querySelector(".parallax");
-        const scrollPosition = window.pageYOffset; // Obtiene la posición del scroll
-
-        // Mueve el fondo a una velocidad diferente
-        parallax.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
-      }
-
-      // Aplicar la animación de parallax cuando la página carga
-      window.addEventListener("load", updateParallax);
-
-      // Aplicar la animación de parallax mientras el usuario hace scroll
-      window.addEventListener("scroll", updateParallax);
-    </script>
+    
 
     <!-- Sección 1: Introducción a la eliminación de tatuajes -->
-    <button class="dropdown-btn" onclick="toggleDropdown()">+</button>
+    <button class="dropdown-btn">
+        +
+    </button>
+
+    <script>
+        // Función para alternar el estado del menú desplegable
+        let btn = document.querySelector('.dropdown-btn')
+        function toggleDropdown() {
+          const dropdown = document.getElementById("myDropdown");
+          dropdown.classList.toggle("show");
+        }
+       
+  
+        btn.addEventListener('click', toggleDropdown)
+        btn.addEventListener('mouseenter', toggleDropdown)
+  
+  
+        // Efecto parallax
+        function updateParallax() {
+          const parallax = document.querySelector(".parallax");
+          const scrollPosition = window.pageYOffset; // Obtiene la posición del scroll
+  
+          // Mueve el fondo a una velocidad diferente
+          parallax.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
+        }
+  
+        // Aplicar la animación de parallax cuando la página carga
+        window.addEventListener("load", updateParallax);
+  
+        // Aplicar la animación de parallax mientras el usuario hace scroll
+        window.addEventListener("scroll", updateParallax);
+      </script>
 
     <!-- Menú desplegable con círculos -->
     <div class="dropdown-container" id="myDropdown">
@@ -99,34 +110,7 @@
     </section>
 
     <!-- Sección 2: Cómo funciona nuestro tratamiento -->
-    <section>
-        <h2>¿QUIERES CONOCER NUESTRAS TARIFAS?</h2>
-        <p>
-          Elimina Tatuajes con la Última Tecnología Láser Todos tenemos malos
-          recuerdos o tatuajes mal hechos, en eliminación de tatuajes Huelva
-          eliminamos los tatuajes y micropigmentación, con las mejores máquinas
-          del mercado. Los tratamientos se realizan con el láser Q-Switch, la
-          última tecnología láser para poder borrar tatuajes, micropigmentación,
-          un maquillaje permanente, ya sean en la cara, escote o manos.
-        </p>
-    </section>
-
-    <section>
-        <h2>Precios:</h2>
-      <div>
-        <strong>Tattoo mini (3x3cm)</strong>
-        <p>40€</p>
-        <strong>Tattoo pequeño (6x6cm) </strong>
-        <p>60€</p>
-        <strong>Tattoo mediano (10x10cm)</strong>
-        <p>80€</p>
-        <strong>Tattoo mediano (10x10cm)</strong>
-        <p>100€</p>
-        <strong> Tattoo grande (15x15cm)</strong>
-        <p>130€</p>
-        <p>Tenemos ofertas y bonos por cantidades.</p>
-      </div>
-    </section>
+    
 
     <section>
         <h2>Preguntas frecuentes</h2>
@@ -134,10 +118,7 @@
         <details>
           <summary>¿Es posible eliminar tatuaje?</summary>
           <p>
-            La pregunta obligada en primer lugar siempre es la relacionada con
-            las posibilidades de eliminar un tatuaje. Hay que tener en cuenta
-            que en la actualidad tenemos a nuestra disposición sistemas
-            avanzados que nos ofrecen no sólo una gran eficacia a la hora de
+            Hay que tener en cuenta que en la actualidad tenemos a nuestra disposición sistemasavanzados que nos ofrecen no sólo una gran eficacia a la hora de
             eliminar un tatuaje, sino también la máxima seguridad, pudiendo de
             este modo actuar sobre prácticamente cualquier parte de nuestro
             cuerpo con muy buenos resultados.
@@ -156,15 +137,15 @@
             <b> Cantidad de pigmento en el tatuaje que se va a eliminar: </b>
 
             Dependiendo de la cantidad de tinta que se encuentre dentro de la
-            piel, costará mas tiempo o menos de poder borrar el tatuaje de la
+            piel, costará mas o menos tiempo de poder borrar el tatuaje de la
             piel.
           </p>
 
           <p>
             <b> Cicatrices en la zona de eliminación o borrado: </b>
 
-            El hecho de que en la zona donde se quiere eliminar se encontremos
-            con cicatrices implica una barrera que protege la tinta y las
+            El hecho de que en la zona donde se quiere eliminar encontremos
+            cicatrices implica una barrera que protege la tinta y las
             particulas de la misma, por lo que tiene un mayor costo a la hora de
             borrarlo.
           </p>
@@ -215,7 +196,7 @@
             proceso más rápido, lo que significa que en el caso de la primera
             tendremos que someternos a más sesiones. De esto podemos obtener que
             también variará el número de sesiones en función de la zona sobre la
-            que vayamos a actuar, ya que la piel de la cara por ejemplo es más
+            que vayamos a actuar, ya que la piel de la cara, por ejemplo, es más
             fina que la piel de las manos.
           </p>
           <p>
@@ -300,8 +281,40 @@
         </details>
       </div>
     </section>
-
+    
     <section>
+        <h2>¿QUIERES CONOCER NUESTRAS TARIFAS?</h2>
+        <div>
+            <p>
+              Elimina Tatuajes con la Última Tecnología Láser Todos tenemos malos
+              recuerdos o tatuajes mal hechos, en eliminación de tatuajes Huelva
+              eliminamos los tatuajes y micropigmentación, con las mejores máquinas
+              del mercado. Los tratamientos se realizan con el láser Q-Switch, la
+              última tecnología láser para poder borrar tatuajes, micropigmentación,
+              un maquillaje permanente, ya sean en la cara, escote o manos.
+            </p>
+        </div>
+    </section>
+
+    <section id="tarifas">
+        <h2>Precios:</h2>
+      <div>
+        <b><p>Zona Pequeña</p></b>
+        <p><b>· 5 Sesiones </b>· 180€</p>  
+        <p><b>· 1 Sesión </b>· 40€</p> <br>
+
+        <b><p>Zona Mediana</p></b>
+        <p><b>· 5 Sesiones </b>· 250€</p>  
+        <p><b>· 1 Sesión </b>· 60€</p><br> 
+
+        <b><p>Zona Grande</p></b> 
+        <p><b>· 5 Sesiones </b>· 450€</p>  
+        <p><b>· 1 Sesión </b>· 100€</p><br>
+        <p>Tenemos ofertas y bonos por cantidades.</p>
+      </div>
+    </section>
+
+    <section id="tratamiento">
       
         <h2>
           Cuidados después de cada sesión de láser de eliminación de tatuaje
@@ -349,7 +362,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="eliminacion">
         <h2>Pasos para la eliminación</h2>
       <div>
         <p>
@@ -392,20 +405,103 @@
     </section>
 
     <!-- Sección 3: Testimonios de clientes -->
-    <section>
-        <h2>Testimonios de nuestros clientes</h2>
-      <div>
-        <p>
-          <strong>Laura M.</strong>: "Pensé que nunca podría deshacerme de mi
-          tatuaje, pero después de unas pocas sesiones con el láser, ¡el
-          resultado ha sido increíble!" ★★★★★
-        </p>        
-        <p>
-          <strong>Javier P.</strong>: "El proceso fue rápido y sin dolor. El
-          equipo fue muy profesional. ¡Recomiendo este servicio!" ★★★★★
+    <section id="opiniones">
+    <h2>Testimonios de nuestros clientes</h2>
+    <div>
+        <p> 
+          <b>Laura M.</b>
         </p>
-      
-      </div>
+        <p class="clasificacion d-flex ">
+            <input id="radio1" type="radio" name="estrellas" style value="5"><!--
+            --><label for="radio1">★</label><!--
+            --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+            --><label for="radio2">★</label><!--
+            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+            --><label for="radio3">★</label><!--
+            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+            --><label for="radio4">★</label><!--
+            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+            --><label for="radio5">★</label>
+          </p>
+        <p>"Pensé que nunca podría deshacerme de mi
+          tatuaje, pero después de unas pocas sesiones con el láser, ¡el
+          resultado ha sido increíble!"
+        </p>        
+    </div>
+    <div> 
+        <p><b>Javier P.</b>: </p> 
+          <p class="clasificacion d-flex ">
+            <input id="radio1" type="radio" name="estrellas" style value="5"><!--
+            --><label for="radio1">★</label><!--
+            --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+            --><label for="radio2">★</label><!--
+            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+            --><label for="radio3">★</label><!--
+            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+            --><label for="radio4">★</label><!--
+            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+            --><label for="radio5">★</label>
+          </p>
+         <p> 
+            "El proceso fue rápido y sin dolor. El
+          equipo fue muy profesional. ¡Recomiendo este servicio!"
+        </p>
+    </div>
+    <div>
+        <p> 
+          <b>Raquel B.</b> 
+        </p>
+        <p class="clasificacion d-flex ">
+            <input id="radio1" type="radio" name="estrellas" style value="5"><!--
+            --><label for="radio1">★</label><!--
+            --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+            --><label for="radio2">★</label><!--
+            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+            --><label for="radio3">★</label><!--
+            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+            --><label for="radio4">★</label><!--
+            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+            --><label for="radio5">★</label>
+          </p>
+        <p>"Es mi tercera sesión y estoy muy contenta con el resultado, ya ha bajado bastante el pigmento y no me ha dañado la piel. El técnico es súper profesional! Lo recomiendo muchísimo."
+        </p>        
+    </div>
+    <div> 
+        <p><b>Rocio R.</b></p> 
+          <p class="clasificacion d-flex ">
+            <input id="radio1" type="radio" name="estrellas" style value="5"><!--
+            --><label for="radio1">★</label><!--
+            --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+            --><label for="radio2">★</label><!--
+            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+            --><label for="radio3">★</label><!--
+            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+            --><label for="radio4">★</label><!--
+            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+            --><label for="radio5">★</label>
+          </p>
+         <p> 
+            "Todo muy higienico, el proceso duele menos de lo que esperaba. Estoy muy contenta con el resultado!! Lo recomiendo 100%"
+        </p>
+    </div>
+    <div> 
+        <p><b>Martina C.</b></p> 
+          <p class="clasificacion d-flex ">
+            <input id="radio1" type="radio" name="estrellas" style value="5"><!--
+            --><label for="radio1">★</label><!--
+            --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+            --><label for="radio2">★</label><!--
+            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+            --><label for="radio3">★</label><!--
+            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+            --><label for="radio4">★</label><!--
+            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+            --><label for="radio5">★</label>
+          </p>
+         <p> 
+            "Andres todo un profesional, y el trato genial. Local e instalaciones muy limpias e higienicas. Lo recomiendo sin duda."
+        </p>
+    </div>
      
     </section>
 
