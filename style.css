@@ -153,9 +153,7 @@ will-change: background-position; /* Optimiza el rendimiento para el parallax */
     transition: background-color 0.3s;
 }
 
-.dropdown-container .circle:hover {
-    background-color: #555;
-}
+
 
 .circle img{
     width: 40px;
